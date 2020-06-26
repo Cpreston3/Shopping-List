@@ -1,21 +1,23 @@
-window.onLoad = function () {
+window.onload = function () {
     initShoppingList();
 };
 
 function initShoppingList() {
     let form = document.getElementById("item-form");
-    console.log(form);}
 
-/* form.addEventListener('submit',(event) => {
-     handleItemForm(event);
+    //console.log(form);}
+
+    form.addEventListener("submit",(event) => {
+     handleItemForm(event, form);
  });
 
 }
 function handleItemForm(event, formRef ) {
- if(e.preventDefault()){
-     e.preventDefault();
+ if(event.preventDefault()) {
+     event.preventDefault();
  }
- console.log("event:", event);
- return false;
 
-}*/
+    console.log("event:", event);
+    return false;
+
+}
