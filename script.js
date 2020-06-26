@@ -5,19 +5,19 @@ window.onload = function () {
 function initShoppingList() {
     let form = document.getElementById("item-form");
 
-    //console.log(form);}
+    console.log(form);
 
     form.addEventListener("submit",(event) => {
      handleItemForm(event, form);
  });
-
 }
-function handleItemForm(event, formRef ) {
+
+function handleItemForm(event, formRef) {
  if(event.preventDefault()) {
      event.preventDefault();
  }
 
-    console.log("event:", event);
+    console.log("Event:", event);
     return false;
 
 }
